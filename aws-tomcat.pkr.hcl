@@ -47,7 +47,7 @@ build {
       "sudo tar xzvf apache-tomcat-8*tar.gz -C /opt/tomcat --strip-components=1",
       "sudo chown -R tomcat:tomcat /opt/tomcat/",
       "sudo chmod -R u+x /opt/tomcat/bin",
-      "cat /opt/tomcat/webapps/manager/META-INF/context.xml",
+      "sudo cat /opt/tomcat/webapps/manager/META-INF/context.xml",
       "sudo update-java-alternatives -l",
       "sudo -u tomcat /opt/tomcat/bin/startup.sh",
       "echo Install - SUCCESS",
