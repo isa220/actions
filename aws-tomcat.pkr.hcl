@@ -9,7 +9,7 @@ packer {
 
 variable "ami_prefix" {
   type    = string
-  default = "packer-aws-ubuntu-java"
+  default = "tomcat-aws-ubuntu-java"
 }
 
 locals {
