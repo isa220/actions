@@ -7,17 +7,12 @@ packer {
   }
 }
 
-variable "ami_prefix" {
-  type    = string
-  default = "tomcat-aws-ubuntu-java"
-}
-
 locals {
   timestamp = regex_replace(timestamp(), "[- TZ:]", "")
 }
 
 source "amazon-ebs" "ubuntu_java" {
-  ami_name      = "${var.ami_prefix}-${local.timestamp}"
+  ami_name      = "tomcat-aws-ubuntu-java-${local.timestamp}"
   instance_type = "t2.micro"
   region        = "us-east-1"
   source_ami_filter {
