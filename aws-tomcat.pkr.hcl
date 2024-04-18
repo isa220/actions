@@ -40,7 +40,7 @@ build {
       "sleep 10",
       "sudo useradd -m -d /opt/tomcat -U -s /bin/false tomcat",
       "sudo apt-get update",
-      "sudo apt-get install -y default–jdk",
+      "sudo apt-get install -y openjdk-8-jdk",
       "java -version",
       "cd /tmp",
       "wget https://dlcdn.apache.org/tomcat/tomcat-10/v10.0.20/bin/apache-tomcat-10.0.20.tar.gz",
